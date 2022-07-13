@@ -132,5 +132,6 @@ clear.addEventListener('click',()=>{
     const itemChecked = document.querySelectorAll('.list input[type="checkbox"]:checked');
     itemChecked.forEach(item=>{
         removeItems(item.closest('li'));
+        updateCount(1)
     })
 })
