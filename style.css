@@ -1,0 +1,161 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family:sans-serif;
+    font-size: 20px;
+    background-color: black;
+}
+
+.bg {
+    background: url("images/bg-desktop-dark.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    margin: -220px auto 0 auto;
+}
+
+.app-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    letter-spacing: 20px;
+}
+
+.app-name img {
+    cursor: pointer;
+    height: 35px;
+}
+
+label {
+    /* position: relative; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.tasks {
+    position: relative;
+    display: flex;
+}
+
+.tasks button {
+    border: 1px solid hsl(234, 11%, 52%);
+    
+    background: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.tasks input {
+    width: 100%;
+    background-color: hsl(235, 26%, 17%);
+    height: 50px;
+    font-size: 1rem;
+    color: hsl(233, 11%, 84%);
+    padding: 10px 10px 10px 45px;
+    border: none;
+    font-family: sans-serif;
+}
+
+.filter {
+    display: flex;
+}
+.filter input{
+   visibility: hidden;
+}
+
+
+
+.todo-list ul {
+    margin-top: 25px;
+}
+
+.todo-list ul li {
+    width: 100%;
+    background-color: hsl(235, 24%, 19%);
+    height: 50px;
+    font-size: 1rem;
+    color: hsl(233, 11%, 84%);
+    padding: 15px;
+    border-bottom: 1px solid hsl(233, 18%, 38%);
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li.disnone {
+    display: none;
+}
+
+.todo-list input {
+    -webkit-appearance: none;
+    border: 1px solid hsl(234, 11%, 52%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.todo-list input:checked {
+    background: url('images/icon-check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.todo-list input:checked~.text {
+    text-decoration: line-through;
+    color: hsl(234, 11%, 52%);
+}
+
+.remove {
+    background: url('images/icon-cross.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.counter {
+    color: hsl(233, 14%, 35%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: hsl(235, 24%, 19%);
+    height: 50px;
+    font-size: 1rem;
+    color: hsl(234, 11%, 52%);
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+}
+
+.clear {
+    cursor: pointer;
+}

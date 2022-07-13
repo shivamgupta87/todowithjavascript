@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+   <title>Todo app</title>
+
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="content">
+    <div class="app-name">
+      <h1>TODO</h1>
+      <img class="chng" src="images/icon-sun.svg" alt="">
+    </div>
+
+    <div class="tasks">
+      <button></button>
+      <input name="tasks" id="tasks" type="text" placeholder="Enter new task">
+    </div>
+    <div class="todo-list">
+      <ul id="list"></ul>
+    </div>
+  
+    <div class="counter">
+      <div class="count"><span></span> items left</div>
+      <div class="filter">
+        <label>
+          <input type="radio" name="filterii" id="all" checked><span>All</span>
+        </label>
+        <label>
+          <input type="radio" name="filterii" id="active"><span>Active</span>
+        </label>
+        <label>
+          <input type="radio" name="filterii" id="completed"><span>Completed</span>
+        </label>
+      </div>
+      <div class="clear">Clear Completed</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
