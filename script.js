@@ -1,6 +1,7 @@
 const itemCount = document.querySelector('.count span');
 
 itemCount.innerText = document.querySelectorAll('.list').length;
+itemc = document.getElementById('list');
 
 const bg = document.querySelector('.bg');
 const themeIcon = document.querySelector('.chng');
@@ -57,6 +58,21 @@ function addItems(text){
     updateCount(1);
 }
 
+
+ itemc.addEventListener('change',updateCountc) ;
+
+ function updateCountc(event)
+ {
+     console.log(event.target.value);
+     if(event.target.value=='on')
+     {
+        // console.log("helo")
+        updateCount(-1)
+     }
+ }
+
+//  document.querySelector('.checked').addEventListener('click')
+
 function updateCount(num) {
     itemCount.innerText = +itemCount.innerText + num;
 }
@@ -70,6 +86,7 @@ todo.addEventListener('click',(event)=>{
     if(event.target.classList.contains('remove')){
         console.log(event.target.parentElement);
         removeItems(event.target.parentElement);
+        updateCount(-1)
     }
 })
 
